@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="welcome-heading">Welcome to Save your Money in Your Way</h1>
+    <button onclick="openSetLimitPage()">Click here to set your limit</button>
+    <div id="set-limit-page" class="hidden">
+      <h2>It's time to set your limit</h2>
+      <input type="number" id="spending-limit" placeholder="Enter your spending limit">
+      <button onclick="setLimit()">Set Limit</button>
+      <button onclick="goBack()">Go Back</button>
+    </div>
+    <div id="expense-tracker" class="hidden">
+      <h2>Expense Log</h2>
+      <input type="number" id="expense-input" placeholder="Enter your expense amount">
+      <button onclick="addExpense()">Add Expense</button>
+      <div id="expense-log"></div>
+      <button onclick="goBack()">Go Back</button>
+    </div>
+  </div>
+
+  <audio id="beep-sound" src="beep-6-96243.mp3"></audio>
+  <audio id="success-sound" src="Piano Beep - Sound ! Notification.mp3"></audio>
+  <audio id="alert-sound" src="One Beep - Notification Sound.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
